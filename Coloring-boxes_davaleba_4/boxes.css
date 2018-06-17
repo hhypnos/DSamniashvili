@@ -1,0 +1,51 @@
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    float: left;
+}
+.box1 {
+    width: 150px;
+    height: 50px;
+    border: 1px solid black;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+.red {
+    background-color: red;
+}
+.red:hover ~ .nocolor{
+    background: red;
+}
+
+
+.green {
+    background-color: green;
+}
+.green:hover ~ .nocolor{
+    background:green;
+}
+
+
+.yellow {
+    background-color: yellow;
+}
+.yellow:hover ~ .nocolor{
+    background:yellow;
+}
+
+
+.blue {
+    background-color: blue;
+}
+.blue:hover ~ .nocolor{
+    background:blue;
+}
+
+
+.pink {
+    background-color: pink;
+}
+.pink:hover ~ .nocolor{
+    background:pink;
+}
