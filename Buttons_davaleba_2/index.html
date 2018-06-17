@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>HOMEWORK</title>
+    <style>
+    table, tr, th, td {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    td, tr, th {
+        padding: 5px 10px;
+    }
+    ul {
+        list-style-type: none;
+    }
+    </style>
+</head>
+<body>
+        <form action="/name" method="GET">
+    <table>
+    
+        <tr>
+            <th>Control Type</th>
+            <th>Data</th>
+            <th>Control</th>
+           
+        </tr>
+        <tr>
+            <td>text box</td>
+            <td> <label for="name">Name:</label> </td>
+            <td>
+                    
+                    <input type="text" name="name" placeholder="Enter name" id="name" maxlength="10"> 
+                    
+            </td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><label for="password">Password:</label> </td>
+            <td>
+                    
+                    <input type="password" name="Password" placeholder="Password" id="password">
+              
+            </td>
+        </tr>
+        <tr>
+            <td>Textarea</td>
+            <td><label for="address">Address:</label> </td>
+            <td>
+                    <textarea rows="4" cols="21" id="address" name="address" placeholder="Enter Address" style="resize: none;">Enter Address </textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>Drop down list</td>
+            <td><label for="area">Area:</label> </td>
+            <td>
+                    <select name="area" id="area">
+                            <option value="center" selected>Center</option>
+                            <option value="top">Top</option>
+                            <option value="bottom">Bottom</option>
+                        </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Check box</td>
+            <td>Hobbies:</td>
+            <td>
+                <ul>
+                    <li><input type="checkbox"  name="hobbie" value="Sport">Sport</li>
+                    <li><input type="checkbox"  name="hobbie" value="Reading">Reading</li>
+                    <li><input type="checkbox"  name="hobbie" value="tv">T.V.</li>
+                    <li><input type="checkbox"  name="hobbie" value="internet">Internet</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+                <td>Radio Buttons</td>
+                <td>Gender:</td>
+                <td>
+                        <fieldset>
+                                <legend>Gender selection</legend>
+                            <ul>
+                               <li> <input type="radio" name="gender"  value="male" checked>Male</li>
+                               <li> <input type="radio" name="gender"  value="female">Female</li>
+                            </ul>
+                        </fieldset>
+                </td>
+            </tr>
+            <tr>
+                    <td>File upload</td>
+                    <td><label for="file">Your image:</label></td>
+                    <td> 
+                        <input type="file" id="file" name="file">
+                    </td>
+                </tr>
+                <tr>
+                        <td>Buttons</td>
+                        <td>Actions:</td>
+                        <td><button type="submit">Submit</button>
+                            <button type="reset">Reset</button>
+                            <button type="button" onclick="alert('Hello....')">Button</button></td>
+                    </tr>
+               
+    </table>
+</form>
+</body>
+</html>
