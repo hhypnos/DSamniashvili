@@ -1,0 +1,21 @@
+#wrapper {
+    margin: 0 auto;
+}
+
+.imagesbox {
+    float: left;
+    margin: 10px;
+    border: 1px solid #bad0f4;  
+}
+.imagesbox:hover {
+    border: 2px solid black;
+}
+.imagesbox img {
+    width: 200px;
+    height: auto;
+    
+}
+.imagecaption {
+    text-align: center;
+    padding: 5px 10px;
+}
