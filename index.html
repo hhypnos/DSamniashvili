@@ -5,21 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <style>
+    #container { 
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+
+        background-color: #e17055;
+        font-family: 'Varela Round', sans-serif;
+    }
+    header h1{
+        text-align: center;
+        color: #fff;
+    }
+    section {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        /* align-items: center; */
+        align-content: flex-start;
+    }
+    .box {
+        align-items: flex-start;
+        padding: 20px;
+        width: 150px;
+        height: 100px;
+        border-radius: 10px;
+        background:rgba(255,255,255, 0.3);
+        margin: 2%;
+    }
+    .box:hover {
+        background:rgba(255,255,255, 0.7);
+        
+    }
+    .box a {
+        text-decoration: none;
+        color: #6c5ce7;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    </style>
 </head>
 <body>
+    
     <header>
-        My GitHub Pages!
+        <h1>My GitHub Pages!</h1>
     </header>
-    <section>
-        <ul>
-            <li><a href="Buttons_davaleba_2/index.html" target="_blank">Buttons (#2)</a></li>
-            <li><a href="chess_davaleba_3/index.html" target="_blank">Chess (#3)</a></li>
-            <li><a href="Coloring-boxes_davaleba_4/index.html" target="_blank">Colorful boxes (#4)</a></li>
-            <li><a href="images-hover_davaleba_5/index.html" target="_blank">Hover on images (#5)</a></li>
-            <li><a href="Pizza_davaleba_6/index.html" target="_blank">Pizza (#6)</a></li>
-            <li><a href="Simons-site-flex_davaleba_9/index.html" target="_blank">Simmons (#9)</a></li>
-            <li><a href="Own Site - Davaleba_10/index.html" target="_blank">Own Site (#10)</a></li>            
+    <section>            
+            <div class="box"><a href="Buttons_davaleba_2/index.html" target="_blank">Buttons (#2)</a></div>
+            <div class="box"><a href="chess_davaleba_3/index.html" target="_blank">Chess (#3)</a></div>
+            <div class="box"><a href="Coloring-boxes_davaleba_4/index.html" target="_blank">Colorful boxes (#4)</a></div>
+            <div class="box"><a href="images-hover_davaleba_5/index.html" target="_blank">Hover on images (#5)</a></div>
+            <div class="box"><a href="Pizza_davaleba_6/index.html" target="_blank">Pizza (#6)</a></div>
+            <div class="box"><a href="Simons-site-flex_davaleba_9/index.html" target="_blank">Simmons (#9)</a></div>
+            <div class="box"><a href="Own Site - Davaleba_10/index.html" target="_blank">Own Site (#10)</a></div>            
         </ul>
     </section>
+
 </body>
 </html>
