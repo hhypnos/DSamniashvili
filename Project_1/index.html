@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+
+<!-- Left section part -->
+
+    <div class="left_section">
+
+        <div class="statistics_of_students">
+            <h2>Statistics of Students Results</h2>
+
+            <div class="statistics_content">
+            <div class="total_days statistics col1">Total days</div>
+            <div class="total_days_result col2" id="totalResultOfDays">NaN</div>
+            </div>
+            <div class="statistics_content">
+            <div class="missed_lessons statistics col1">missed lessons</div>
+            <div class="missed_lessons_result col2" id="totalMissedDays">NaN</div>
+             </div>
+            <div class="statistics_content">
+            <div class="average_mark statistics col1">average mark</div>
+            <div class="average_mark_result col2" id="totalAverageMark">NaN</div>
+            </div>
+            <div class="statistics_content">
+            <div class="total_students statistics col1">total students</div>
+            <div class="total_students_result col2" id="totalResult">NaN</div>
+            </div>
+
+            <div class="statistics_content">
+                <div class="total_students statistics col1">Which is A or B or C</div>
+                <div class="total_students_result col2" id="abc">NaN</div>
+                </div>
+
+
+        </div>
+
+        <div class="copyright">
+                <h3 class="author">Author</h3>
+                    <p>Dea Samniashvili</p>
+            </div>
+    </div>
+
+<!-- End of left section -->
+
+
+<!-- Main section start -->
+
+    <div class="main_section">
+        <div class="table_container">
+            <div class="table_buttons">
+                <h2>Table</h2>
+                <button class="add_day table_button" onclick="addDay()">Add day</button>
+                <button class="remove_day table_button" onclick="removeDay()">Remove Day</button>
+                <button class="update_table table_button" onclick="updateTable()">Update Table</button>
+            </div>
+
+
+        <div class="main_table">
+        <ul class="students_fullname" id="all_students" style="display: inline-block;">
+
+            <li class="student_fullname">Dea Samniashvili</li>
+            <li class="student_fullname">Nino Matskepladze</li>
+            <li class="student_fullname">Elene Qushi</li>
+            <li class="student_fullname">Otiko Potskhoraia</li>
+            <li class="student_fullname">Tea Chagua</li>
+            <li class="student_fullname">Nikoloz Asatiani</li>
+            <li class="student_fullname">Tatia Zhodurishvili</li>
+            <li class="student_fullname">Vaxo Nodadze</li>
+            <li class="student_fullname">Saba Turdzeladze</li>
+            <li class="student_fullname">Ana Kurtsikashvili</li>
+        </ul>
+        <div class="average" style="display: inline-block;">
+            <span>Average</span>
+            <ul class="students_average" id = "average" >
+
+
+                <li class="student_average User0">0</li>
+                <li class="student_average User1">0</li>
+                <li class="student_average User2">0</li>
+                <li class="student_average User3">0</li>
+                <li class="student_average User4">0</li>
+                <li class="student_average User5">0</li>
+                <li class="student_average User6">0</li>
+                <li class="student_average User7">0</li>
+                <li class="student_average User8">0</li>
+                <li class="student_average User9">0</li>
+            </ul>
+        </div>
+<!--
+       Here the DOM goes
+            </div> -->
+
+
+        </div>
+    </div>
+    </div>
+<!-- End of main section -->
+</div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
