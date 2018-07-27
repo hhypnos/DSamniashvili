@@ -9,12 +9,12 @@ let todayDate = new Date().getDate();
 function createCalendar(elem, year, month){
 
     let date = new Date(year, month);
-    let firstDay = new Date(date.getFullYear(), date.getMonth(), 1).getDay(); //4
-    let firstDate = new Date(date.getFullYear(), date.getMonth(), 1).getDate(); //1
+    let firstDay = new Date(date.getFullYear(), date.getMonth()-1, 1).getDay(); //4
+    let firstDate = new Date(date.getFullYear(), date.getMonth()-1, 1).getDate(); //1
 
     console.log(firstDay)
     console.log(firstDate)
-    let lastDate = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();  //28
+    let lastDate = new Date(date.getFullYear(), date.getMonth(), 0).getDate();  //28
     console.log(lastDate)
     
 
