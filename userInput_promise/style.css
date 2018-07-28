@@ -1,0 +1,52 @@
+#wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;  
+}
+
+#form {
+   display: flex;
+   /* flex-flow: row wrap; */
+   justify-content: flex-start; 
+   width: 470px;
+   box-sizing: border-box;
+}
+#left {
+    margin: 0 20px;
+}
+#aboutId {
+    width: 160px;
+    
+}
+#save {
+    width: 80px;
+    height: 30px;
+    align-self: flex-end;
+    position: absolute;
+    margin: 20px 10px 0 20px;
+}
+#image {
+    width: 20%;
+    height: 300px;
+    background-color: red;
+}
+#afterform {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box {
+    /* border: 1px solid black; */
+    margin: 15px;
+}
+.box1 {
+    /* border: 1px solid black; */
+    margin: 15px;
+}
+
+.waiting {
+    /* margin-left: 50%; */
+    font-size: 30pt;
+    width: 100%;
+}
