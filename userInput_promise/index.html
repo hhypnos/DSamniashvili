@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div id="form">
+            <div id="left">
+            <div>Day</div>
+            <input type="text" name="day" class = "day" placeholder="birth day">
+            <div>Year</div>
+            <input type="text" name="year" class = "year" placeholder="birth Year">
+            <div>Month</div>
+            <input type="text" name="month" class = "month" placeholder="birth Month">
+            <div>City</div>
+            <input type="text" name="city" class = "city" placeholder="City">
+        </div>
+        <button type="button" id="save" onclick="toStart()">Save</button>
+            <div id="aboutId">
+                <div>About</div>
+                <textarea rows="10" cols="15" class = "about"> Write smth about you</textarea>
+         </div>
+         
+         </div>
+
+         
+
+        
+
+        <div id="image" style="display: none">
+        </div>
+
+        <div id="afterform" style="display: none">
+            <div class = "box">Your birthDay is:</div>
+            <div class="birth-day box1"></div>
+
+            <div class = "box">Your birtMonth is:</div>
+            <div class="birth-month box1"></div>
+
+            <div class = "box">Your birthYear is:</div>
+            <div class="birth-year box1"></div>
+
+            <div class = "box">You live in:</div>
+            <div class="city-name box1"></div>
+
+            <div class = "box">Your about me is:</div>
+            <div class="about-me box1"></div>
+        </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
