@@ -37,8 +37,9 @@
 }
 
 .box {
-    /* border: 1px solid black; */
-    margin: 15px;
+    border: 1px solid black;
+    margin: 15px 0 15px 15px;
+    width: 120px;
 }
 .box1 {
     /* border: 1px solid black; */
