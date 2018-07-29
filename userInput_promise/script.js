@@ -8,7 +8,7 @@ let year = document.getElementsByClassName("year")[0].value;
 let city = document.getElementsByClassName("city")[0].value;
 let about = document.getElementsByClassName("about")[0].value;
 
-//let wait = document.getElementsByClassName("waiting")[0];
+
 
 
 function toStart(){
@@ -20,7 +20,6 @@ function toStart(){
     let myTime = makePromise(2000);
 
 myTime
-
 .then( (result) => {
     saveFunction();
      })
@@ -52,6 +51,9 @@ function saveFunction(){
         afterForm.style.display='block';
         myImage.style.display='block';
       }
+
+      let wait = document.getElementsByClassName("waiting")[0];
+      wait.setAttribute("style", "display:none");
 }
 
 //   if(document.getElementsByClassName("waiting")[0].style.display =='block'){
