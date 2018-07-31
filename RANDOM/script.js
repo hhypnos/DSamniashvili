@@ -9,7 +9,7 @@ console.log(myBox)
 // let eachbox = function(){
 //     for(let i=0; i<myBox.length; i++) {
 //         let eachBoxInner = myBox[i].innerText;
-//         boxArray.push(eachBoxInner); 
+//         boxArray.push(eachBoxInner);
 //         // console.log(eachBoxInner);
 //     }
 //     console.log(boxArray);
@@ -19,25 +19,22 @@ console.log(myBox)
 //console.log(boxArray)
 
 function randomFunction() {
-    
+
     let random = Math.floor(Math.random() * 20);
     //console.log(random)
     for(let j=0; j < myBox.length; j++){
         //console.log(myBox[j].textContent);
         if(parseInt(myBox[j].textContent) == random) {
-            if(!myBox[j].classList.contains('color1')){
-                myBox[j].classList.add("color1");
-            }
-            else if(myBox[j].classList.contains("color1")){
+             if(myBox[j].classList.contains("color1")){
                 myBox[j].classList.add("color2");
-                myBox[j].classList.remove("color1");       
-            }
-           
-            else if(myBox[j].classList.contains("color2")){
+                myBox[j].classList.remove("color1");
+            }else if(myBox[j].classList.contains("color2")){
                 myBox[j].classList.add("color3");
                 myBox[j].classList.remove("color2");
+            }else{
+              myBox[j].classList.add("color1");
             }
-            
+
             // console.log(myBox[j].textContent);
             // console.log(random);
             // console.log(myBox[j])
