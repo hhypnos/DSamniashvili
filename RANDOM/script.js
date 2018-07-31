@@ -1,5 +1,5 @@
 let myBox = document.getElementsByClassName('box');
-let allbox = document.querySelectorAll('.box');
+// let allbox = document.querySelectorAll('.box');
 // console.log(myBox.length)
 // console.log(myBox)
 
@@ -22,12 +22,12 @@ function randomFunction() {
     
     let random = Math.floor(Math.random() * 20);
     //console.log(random)
-    for(let j=0; j<myBox.length; j++){
-        //console.log(myBox[j])
+    for(let j=0; j<=myBox.length; j++){
+        console.log(myBox.length)
         // debugger;
         //console.log(parseInt(myBox[j].textContent))
 
-        if(parseInt(myBox[j].textContent) == random) {
+        if(parseInt(myBox[j].innerHTML) == random) {
             if(!myBox[j].classList.contains('color1')){
                 myBox[j].classList.add("color1");
             }
