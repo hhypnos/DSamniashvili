@@ -20,7 +20,7 @@ let allbox = document.querySelectorAll('.box');
 
 function randomFunction() {
     
-    let random = Math.floor(Math.random() * 10);
+    let random = Math.floor(Math.random() * 20);
     //console.log(random)
     for(let j=0; j<myBox.length; j++){
         //console.log(myBox[j])
